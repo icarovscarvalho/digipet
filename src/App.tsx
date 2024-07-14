@@ -1,10 +1,11 @@
+import { Container } from "./components/Container"
 import "./styles.css"
 
 function App() {
 
   return (
     <>
-      <h1>Hello World</h1>
+      <Container />
     </>
   )
 }
