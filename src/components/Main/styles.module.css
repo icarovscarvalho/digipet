@@ -33,136 +33,6 @@ main{
             gap: 10px;
             overflow: hidden;
             padding: 0 10px;
-
-            >.lifeBarContainer{
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                flex: 2;
-
-                >.ionIcon{
-                    font-size: 1.4rem;
-                    color: var(--redColor);
-                    margin-right: 5px;
-                }
-
-                >.lifeBarLength{
-                    width: 100px;
-                    height: 20px;
-                    border: 2px solid var(--redStrongColor);
-                    border-radius: 15px;
-                    overflow: hidden;
-
-                    >.lifeInnerContent{
-                        width: 100%;
-                        height: 100%;
-                        background-color: var(--redColor);
-                        border-radius: 0 3px 3px 0;
-                    }
-                }
-            }
-
-            >.thirstyBarContainer{
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                flex: 1;
-
-                >.ionIcon{
-                    font-size: 1.4rem;
-                    color: var(--blueColor);
-                    margin-right: 5px;
-                }
-
-                >.thirstyBarLength{
-                    width: 50px;
-                    height: 20px;
-                    border: 2px solid var(--blueStrongColor);
-                    border-radius: 15px;
-                    overflow: hidden;
-
-                    >.thirstyInnerContent{
-                        width: 100%;
-                        height: 100%;
-                        background-color: var(--blueColor);
-                        border-radius: 0 3px 3px 0;
-                    }
-                }
-            }
-
-            >.hungerBarContainer{
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                flex: 1;
-
-                >.ionIcon{
-                    font-size: 1.4rem;
-                    color: var(--greenColor);
-                    margin-right: 5px;
-                }
-
-                >.hungerBarLength{
-                    width: 50px;
-                    height: 20px;
-                    border: 2px solid var(--greenStrongColor);
-                    border-radius: 15px;
-                    overflow: hidden;
-
-                    >.hungerInnerContent{
-                        width: 100%;
-                        height: 100%;
-                        background-color: var(--greenColor);
-                        border-radius: 0 3px 3px 0;
-                    }
-                }
-            }
-
-            .happyContainer{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                font-size: 1.4rem;
-                cursor: default;
-            }
-        }
-
-        >.tamagotchiBody{
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-
-            height: 100%;
-            width: 80%;
-            margin: 20px 0;
-            padding-bottom: 30px;
-            /* position: relative; */
-
-            
-            border-radius: 50%;
-            box-shadow: inset 0px 0px 10px #fff;
-            background-image: url(../../assets/filed.png);
-            background-position: center center;
-            background-size: cover;
-            background-repeat: no-repeat;
-
-            .eggAnimation{
-                animation: jiggle 3s infinite;
-                padding-bottom: 100px;
-                filter: drop-shadow(0 15px 16px #000);
-                margin-bottom: -100px;
-            }
-
-            .egg{
-                height: 200px;
-                width: 200px;
-                background-image: url(../../assets/egg.webp);
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-                animation: linear eggMovement 3s infinite;
-            }
         }
 
         >.tamagotchiButtons{
@@ -173,78 +43,21 @@ main{
             padding: 20px;
             width: fit-content;
 
-            >button{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                
-                font-size: 1.5rem;
-                padding: 5px;
-                background-color: #f8f5dd;
-                border: none;
-                border-radius: 5px;
-                box-shadow: -3px 3px 10px #0005;
-                z-index: 1;
-
-                &:hover{
-                    cursor: pointer;
-                    box-shadow: inset 0 0 5px #0005;
-                }
-            }
-
             >:first-child{
                 color: #0073ff;
             }
-
+        
             >:nth-child(2){
                 color: #d70e0e;
             }
-
+        
             >:nth-child(3){
                 color: #0e11d7;
             }
-
+        
             >:last-child{
                 color: #d7510e;
             }
         }
     }
-}
-
-@keyframes jiggle {
-    0% {}
-
-    10% {
-        transform: rotate(5deg) translateX(2px)
-    }
-
-    15% {
-        transform: rotate(-10deg) translateX(-5px)
-    }
-
-    25% {
-        transform: rotate(12deg) translateX(6px)
-    }
-
-    35% {
-        transform: rotate(-5deg) translateX(-2px)
-    }
-
-    40% {
-        transform: rotate(7deg) translateX(3px)
-    }
-
-    55% {
-        transform: rotate(-8deg) translateX(-4px)
-    }
-
-    60% {
-        transform: rotate(0deg) translateX(0px)
-    }
-
-    80% {
-        transform: rotate(-10deg) translateX(-5px)
-    }
-
-    100% {}
 }

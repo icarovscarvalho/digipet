@@ -1,0 +1,92 @@
+.lifeBarContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 2;
+
+    >.ionIcon{
+        font-size: 1.4rem;
+        color: var(--redColor);
+        margin-right: 5px;
+    }
+
+    >.lifeBarLength{
+        width: 100px;
+        height: 20px;
+        border: 2px solid var(--redStrongColor);
+        border-radius: 15px;
+        overflow: hidden;
+
+        >.lifeInnerContent{
+            width: 100%;
+            height: 100%;
+            background-color: var(--redColor);
+            border-radius: 0 3px 3px 0;
+        }
+    }
+}
+
+.thirstyBarContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+
+    >.ionIcon{
+        font-size: 1.4rem;
+        color: var(--blueColor);
+        margin-right: 5px;
+    }
+
+    >.thirstyBarLength{
+        width: 50px;
+        height: 20px;
+        border: 2px solid var(--blueStrongColor);
+        border-radius: 15px;
+        overflow: hidden;
+
+        >.thirstyInnerContent{
+            width: 100%;
+            height: 100%;
+            background-color: var(--blueColor);
+            border-radius: 0 3px 3px 0;
+        }
+    }
+}
+
+.hungerBarContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+
+    >.ionIcon{
+        font-size: 1.4rem;
+        color: var(--greenColor);
+        margin-right: 5px;
+    }
+
+    >.hungerBarLength{
+        width: 50px;
+        height: 20px;
+        border: 2px solid var(--greenStrongColor);
+        border-radius: 15px;
+        overflow: hidden;
+
+        >.hungerInnerContent{
+            width: 100%;
+            height: 100%;
+            background-color: var(--greenColor);
+            border-radius: 0 3px 3px 0;
+        }
+    }
+}
+
+.happyContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.4rem;
+    cursor: default;
+}
