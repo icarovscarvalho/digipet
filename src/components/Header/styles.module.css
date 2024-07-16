@@ -23,6 +23,7 @@ header{
     .title{
         display: flex;
         align-items: center;
+        cursor: default;
     
         >:first-child{
             margin: 0 10px;

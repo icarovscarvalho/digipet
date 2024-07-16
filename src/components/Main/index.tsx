@@ -40,7 +40,7 @@ export function Main() {
                         <button><FaBowlFood /></button>
                         <button><FaHeart /></button>
                         <button><FaShower /></button>
-                        <button><FaBriefcaseMedical /></button>
+                        <button><FaBriefcaseMedical className={styles.ionIcon} /></button>
                     </div>
                 </section>
             </main>

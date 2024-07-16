@@ -184,15 +184,16 @@ main{
                 border: none;
                 border-radius: 5px;
                 box-shadow: -3px 3px 10px #0005;
-            }
+                z-index: 1;
 
-            >button:hover{
-                cursor: pointer;
-                box-shadow: inset 0 0 5px #0005;
+                &:hover{
+                    cursor: pointer;
+                    box-shadow: inset 0 0 5px #0005;
+                }
             }
 
             >:first-child{
-                color: rgb(0, 115, 255);
+                color: #0073ff;
             }
 
             >:nth-child(2){
