@@ -1,0 +1,55 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--creamColor);
+    width: 100vw;
+    height: 70px;
+
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 3px 5px #0005;
+    font-family: sans-serif;
+
+    .logo{
+        height: 50px;
+        width: 50px;
+        background-image: url(https://www.clipartmax.com/png/middle/291-2916067_pokemon-egg-png-pokemon-egg-png.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .title{
+        display: flex;
+        align-items: center;
+    
+        >:first-child{
+            margin: 0 10px;
+            color: var(--greenColor);
+            font-size: 2.5rem;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: var(--greenStrongColor);
+            text-shadow: -3px 3px 5px #0005;
+            transform: rotate(-15deg);
+        }
+    
+        >:nth-child(2){
+            color: var(--orangeColor);
+            font-size: 2.1rem;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: var(--redStrongColor);
+            text-shadow: -3px 3px 5px #0005;
+            transform: rotate(8deg);
+        }
+    
+        >:last-child{
+            color: #f1e836;
+            font-size: 2.5rem;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #b39916;
+            text-shadow: -3px 3px 5px #0005;
+            transform: rotate(-7deg);
+        }
+    }
+}
